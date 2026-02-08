@@ -1,0 +1,11 @@
+Lighthouse Auto-Fix Backups
+Created: 2026-02-08T10:08:53.168Z
+
+Backed up files:
+- app\layout.tsx.lighthouse-backup
+
+To restore a file, run:
+  mv <file>.lighthouse-backup <file>
+
+To remove all backups:
+  npm run lighthouse-cleanup

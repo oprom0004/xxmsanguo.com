@@ -1,0 +1,53 @@
+﻿
+馃殌 Lighthouse Score Optimizer
+
+Scanning project for optimization opportunities...
+
+馃摫 Checking viewport meta tag...
+   鉁?Viewport configuration is good
+
+馃敀 Checking security headers...
+   鉁?Security headers configured
+
+馃搼 Checking heading order...
+   鉁?Heading hierarchy is correct
+
+馃帹 Checking color contrast...
+   鉁?No obvious contrast issues detected
+
+馃捑 Checking cache policy...
+   鉁?Cache policy configured
+
+鈿欙笍  Checking Next.js config...
+   鈿狅笍  next.config.ts not found
+
+馃摝 Checking static export config...
+   鈿狅笍  app/sitemap.ts: missing force-static (-5 points)
+   鈿狅笍  app/robots.ts: missing force-static (-5 points)
+
+馃柤锔? Checking image optimization...
+   鉁?Images properly optimized
+
+鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲
+馃搳 Optimization Report
+
+馃攳 SEO: -10 points
+   馃煚 Missing force-static in sitemap.ts
+      馃搧 app/sitemap.ts
+      馃挕 Add: export const dynamic = "force-static"
+   馃煚 Missing force-static in robots.ts
+      馃搧 app/robots.ts
+      馃挕 Add: export const dynamic = "force-static"
+
+鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲
+
+馃搱 Score Impact Summary
+
+Total Issues: 2
+Estimated Score Impact: -10 points
+Current Estimated Score: 90/100
+
+馃帀 Great! Your score is excellent!
+
+馃挕 Run "npm run lighthouse-fix" to auto-fix some issues
+
