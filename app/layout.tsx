@@ -22,6 +22,7 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: '/appicon.webp',
+    shortcut: '/appicon.webp',
     apple: '/appicon.webp',
   },
   alternates: {
