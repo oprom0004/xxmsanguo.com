@@ -74,7 +74,7 @@ export default function GamePage() {
                 <div className="flex-1 min-w-0">
                   <h1 className="text-2xl font-bold text-gray-900 mb-1 leading-tight">小虾米战三国</h1>
                   <div className="flex items-center gap-2 mb-3">
-                    <span className="bg-gray-100 text-gray-500 text-xs px-1.5 py-0.5 rounded">发行: 隐都工作室</span>
+                    <span className="bg-gray-100 text-gray-500 text-xs px-1.5 py-0.5 rounded">发行: 小虾米三国</span>
                     <span className="text-xs text-brand border border-brand/30 px-1.5 py-0.5 rounded">官方正版</span>
                   </div>
 
@@ -318,7 +318,7 @@ export default function GamePage() {
               <div className="space-y-4 text-sm">
                 <div className="flex justify-between border-b border-gray-100 pb-2">
                   <span className="text-gray-500">开发商</span>
-                  <span className="text-brand">隐都工作室</span>
+                  <span className="text-brand">小虾米三国</span>
                 </div>
                 <div className="flex justify-between border-b border-gray-100 pb-2">
                   <span className="text-gray-500">发行</span>
@@ -375,7 +375,7 @@ export default function GamePage() {
 
         {/* Footer */}
         <footer className="mt-12 py-8 text-center text-gray-400 text-xs border-t border-gray-200">
-          <p className="mb-2">© 2026 隐都工作室 (Yindu Studio). All Rights Reserved.</p>
+          <p className="mb-2">© 2026 小虾米三国. All Rights Reserved.</p>
           <p>沪ICP备 20260000号-1 | 客服电话: 400-123-4567</p>
         </footer>
       </div>
