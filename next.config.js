@@ -2,13 +2,9 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  output: 'export',
   images: {
-    domains: [
-      'images.unsplash.com',
-      'upload.wikimedia.org',
-      'static.okx.com',
-      'api.dicebear.com'
-    ],
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
