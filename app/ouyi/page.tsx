@@ -90,7 +90,7 @@ export default function OuyiPage() {
         <div className="rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
           <Image
             src="/okx-banner.png"
-            alt="欧易 OKX"
+            alt="欧易OKX官方下载 - 数字货币交易平台APP"
             width={608}
             height={341}
             className="w-full h-auto object-cover"

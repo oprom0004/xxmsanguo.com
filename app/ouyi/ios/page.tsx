@@ -59,7 +59,7 @@ export default function OuyiIOSPage() {
 
             <div className="flex flex-col md:flex-row gap-6 items-center mb-10 not-prose bg-slate-50 p-6 rounded-xl border border-slate-100">
               <div className="w-24 h-24 bg-white rounded-2xl shadow-sm p-3 shrink-0 flex items-center justify-center">
-                <Image src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" width={96} height={96} className="object-contain" alt="Apple Logo" />
+                <Image src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" width={96} height={96} className="object-contain" alt="欧易苹果版下载 - OKX iOS iPhone iPad官方APP" />
               </div>
               <div className="flex-1 space-y-2">
                 <div className="text-xl font-bold text-slate-900">欧易 OKX iOS 官方客户端</div>

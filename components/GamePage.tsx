@@ -53,7 +53,7 @@ export default function GamePage() {
           <Search className="md:hidden" size={24} />
           <Bell size={24} />
           <div className="w-8 h-8 bg-gray-200 rounded-full overflow-hidden border border-gray-100">
-            <Image src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix" alt="User" width={32} height={32} />
+            <Image src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix" alt="小虾米战三国玩家头像" width={32} height={32} />
           </div>
         </div>
       </nav>
@@ -68,7 +68,7 @@ export default function GamePage() {
             <div className="bg-white md:rounded-2xl p-6 shadow-soft mb-4">
               <div className="flex items-start gap-4">
                 <div className="w-24 h-24 rounded-2xl overflow-hidden shadow-md flex-shrink-0 border border-gray-100 relative">
-                  <Image src="/appicon.webp" alt="Icon" width={96} height={96} className="object-cover" />
+                  <Image src="/appicon.webp" alt="小虾米战三国游戏图标 - 三国战棋RPG手游" width={96} height={96} className="object-cover" />
                   <div className="absolute bottom-0 right-0 bg-yellow-400 text-[10px] font-bold px-1 rounded-tl-md">S3</div>
                 </div>
                 <div className="flex-1 min-w-0">
@@ -383,7 +383,7 @@ export default function GamePage() {
       {/* Mobile Sticky Bottom Bar */}
       <div className="fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 p-3 md:hidden z-50 flex items-center gap-3">
         <div className="w-10 h-10 rounded-lg overflow-hidden border border-gray-100">
-          <Image src="/appicon.webp" alt="Icon" width={40} height={40} className="object-cover" />
+          <Image src="/appicon.webp" alt="小虾米战三国 - 开放世界三国RPG" width={40} height={40} className="object-cover" />
         </div>
         <div className="flex-1">
           <div className="font-bold text-sm text-gray-900">小虾米战三国</div>
