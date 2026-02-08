@@ -102,20 +102,20 @@ export default function GamePage() {
 
               {/* Action Buttons */}
               <div className="flex flex-wrap gap-3 mt-6">
-                <Link
-                  href="/xiaoxiami/anzhuo"
+                <button
+                  onClick={() => window.open('https://www.taptap.cn/app/381709?os=android', '_blank')}
                   className="flex-1 min-w-[120px] bg-brand hover:bg-brand-dark text-white py-3 rounded-xl font-bold flex items-center justify-center gap-2 transition-colors shadow-lg shadow-brand/20"
                 >
                   <Download size={20} />
                   安卓版下载
-                </Link>
-                <Link
-                  href="/xiaoxiami/ios"
+                </button>
+                <button
+                  onClick={() => window.open('https://apps.apple.com/cn/app/%E5%B0%8F%E8%99%BE%E7%B1%B3%E6%88%98%E4%B8%89%E5%9B%BD-%E7%AD%96%E7%95%A5%E7%BB%8F%E5%85%B8%E5%89%A7%E6%83%85%E6%94%BE%E7%BD%AE%E5%8D%A1%E7%89%8C%E6%89%8B%E6%B8%B8/id6443612482', '_blank')}
                   className="flex-1 min-w-[120px] bg-gray-900 hover:bg-gray-800 text-white py-3 rounded-xl font-bold flex items-center justify-center gap-2 transition-colors shadow-lg shadow-gray-900/20"
                 >
                   <Download size={20} />
                   苹果版下载
-                </Link>
+                </button>
                 <div className="flex gap-3">
                   <button className="w-12 h-12 flex items-center justify-center border border-gray-200 rounded-xl text-brand hover:bg-brand/5 transition-colors">
                     <Share2 size={20} />
@@ -389,7 +389,16 @@ export default function GamePage() {
           <div className="font-bold text-sm text-gray-900">小虾米战三国</div>
           <div className="text-xs text-gray-500">高自由度武侠RPG</div>
         </div>
-        <button className="bg-brand text-white px-6 py-2 rounded-full font-bold shadow-lg shadow-brand/20">
+        <button
+          onClick={() => {
+            const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+            const url = isIOS
+              ? 'https://apps.apple.com/cn/app/%E5%B0%8F%E8%99%BE%E7%B1%B3%E6%88%98%E4%B8%89%E5%9B%BD-%E7%AD%96%E7%95%A5%E7%BB%8F%E5%85%B8%E5%89%A7%E6%83%85%E6%94%BE%E7%BD%AE%E5%8D%A1%E7%89%8C%E6%89%8B%E6%B8%B8/id6443612482'
+              : 'https://www.taptap.cn/app/381709?os=android';
+            window.open(url, '_blank');
+          }}
+          className="bg-brand text-white px-6 py-2 rounded-full font-bold shadow-lg shadow-brand/20"
+        >
           下载
         </button>
       </div>
