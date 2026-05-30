@@ -11,7 +11,8 @@ import {
   Search,
   Bell,
   Gamepad2,
-  HelpCircle
+  HelpCircle,
+  ArrowUp
 } from 'lucide-react'
 
 const screenshots = [
@@ -52,6 +53,33 @@ function MobileRecommendedLinks() {
           </Link>
         ))}
       </div>
+    </div>
+  )
+}
+
+function FloatingQuickLinks() {
+  return (
+    <div className="fixed right-3 bottom-24 md:right-6 md:bottom-8 z-40 flex flex-col gap-2">
+      <button
+        type="button"
+        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+        className="w-11 h-11 rounded-full bg-white border border-gray-200 shadow-lg flex items-center justify-center text-gray-600 hover:text-brand hover:border-brand/40 hover:bg-brand/5 transition-colors"
+        aria-label="返回首屏"
+        title="返回首屏"
+      >
+        <ArrowUp size={20} />
+      </button>
+      {recommendedLinks.map((item) => (
+        <Link
+          key={item.href}
+          href={item.href}
+          className="w-11 h-11 rounded-full bg-white border border-gray-200 shadow-lg flex items-center justify-center p-2 hover:border-brand/40 hover:bg-brand/5 transition-colors"
+          aria-label={item.title}
+          title={item.title}
+        >
+          <Image src={item.icon} alt="" width={24} height={24} className="object-contain" />
+        </Link>
+      ))}
     </div>
   )
 }
@@ -408,6 +436,7 @@ export default function GamePage() {
           下载
         </button>
       </div>
+      <FloatingQuickLinks />
     </div>
   )
 }
