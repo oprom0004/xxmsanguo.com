@@ -2,10 +2,10 @@ const OUYI_HOST = 'ouyi.xxmsanguo.com'
 const MAIN_HOSTS = new Set(['xxmsanguo.com', 'www.xxmsanguo.com'])
 
 const ouyiRoutes = new Map([
-  ['/', '/ouyi.html'],
-  ['/anzhuo', '/ouyi/anzhuo.html'],
-  ['/ios', '/ouyi/ios.html'],
-  ['/pc', '/ouyi/pc.html'],
+  ['/', '/ouyi'],
+  ['/anzhuo', '/ouyi/anzhuo'],
+  ['/ios', '/ouyi/ios'],
+  ['/pc', '/ouyi/pc'],
 ])
 
 export async function onRequest(context) {

@@ -1,7 +1,0 @@
-# Cloudflare Pages redirects for old Ouyi paths.
-/ouyi https://ouyi.xxmsanguo.com/ 301
-/ouyi/ https://ouyi.xxmsanguo.com/ 301
-/ouyi/anzhuo https://ouyi.xxmsanguo.com/anzhuo 301
-/ouyi/ios https://ouyi.xxmsanguo.com/ios 301
-/ouyi/pc https://ouyi.xxmsanguo.com/pc 301
-/ouyi/* https://ouyi.xxmsanguo.com/:splat 301
