@@ -29,6 +29,11 @@ const recommendedLinks = [
   { title: "欧易电脑版下载", href: "https://ouyi.xxmsanguo.com/pc", icon: "/okex-logo-pc.png" }
 ]
 
+const gameDownloadLinks = {
+  android: 'https://play.google.com/store/apps/details?id=com.ascthcl.android.ltk&hl=zh',
+  ios: 'https://www.taptap.cn/app/381709/topic',
+}
+
 function HeroRecommendedLinks() {
   return (
     <div className="bg-white md:rounded-2xl p-6 shadow-soft mb-4">
@@ -156,14 +161,14 @@ export default function GamePage() {
               {/* Action Buttons */}
               <div className="flex flex-wrap gap-3 mt-6">
                 <button
-                  onClick={() => window.open('https://www.taptap.cn/app/381709?os=android', '_blank')}
+                  onClick={() => window.open(gameDownloadLinks.android, '_blank')}
                   className="flex-1 min-w-[120px] bg-brand hover:bg-brand-dark text-white py-3 rounded-xl font-bold flex items-center justify-center gap-2 transition-colors shadow-lg shadow-brand/20"
                 >
                   <Download size={20} />
                   安卓版下载
                 </button>
                 <button
-                  onClick={() => window.open('https://apps.apple.com/cn/app/%E5%B0%8F%E8%99%BE%E7%B1%B3%E6%88%98%E4%B8%89%E5%9B%BD-%E7%AD%96%E7%95%A5%E7%BB%8F%E5%85%B8%E5%89%A7%E6%83%85%E6%94%BE%E7%BD%AE%E5%8D%A1%E7%89%8C%E6%89%8B%E6%B8%B8/id6443612482', '_blank')}
+                  onClick={() => window.open(gameDownloadLinks.ios, '_blank')}
                   className="flex-1 min-w-[120px] bg-gray-900 hover:bg-gray-800 text-white py-3 rounded-xl font-bold flex items-center justify-center gap-2 transition-colors shadow-lg shadow-gray-900/20"
                 >
                   <Download size={20} />
@@ -397,9 +402,7 @@ export default function GamePage() {
         <button
           onClick={() => {
             const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
-            const url = isIOS
-              ? 'https://apps.apple.com/cn/app/%E5%B0%8F%E8%99%BE%E7%B1%B3%E6%88%98%E4%B8%89%E5%9B%BD-%E7%AD%96%E7%95%A5%E7%BB%8F%E5%85%B8%E5%89%A7%E6%83%85%E6%94%BE%E7%BD%AE%E5%8D%A1%E7%89%8C%E6%89%8B%E6%B8%B8/id6443612482'
-              : 'https://www.taptap.cn/app/381709?os=android';
+            const url = isIOS ? gameDownloadLinks.ios : gameDownloadLinks.android;
             window.open(url, '_blank');
           }}
           className="bg-brand text-white px-6 py-2 rounded-full font-bold shadow-lg shadow-brand/20"
