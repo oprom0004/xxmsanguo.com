@@ -3,7 +3,8 @@ import { MetadataRoute } from 'next'
 export const dynamic = 'force-static'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = 'https://xxmsanguo.com' // Replace with your actual domain
+    const baseUrl = 'https://xxmsanguo.com'
+    const ouyiUrl = 'https://ouyi.xxmsanguo.com'
 
     return [
         {
@@ -13,25 +14,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 1,
         },
         {
-            url: `${baseUrl}/ouyi`,
+            url: ouyiUrl,
             lastModified: new Date(),
             changeFrequency: 'daily',
             priority: 0.9,
         },
         {
-            url: `${baseUrl}/ouyi/anzhuo`,
+            url: `${ouyiUrl}/anzhuo`,
             lastModified: new Date(),
             changeFrequency: 'weekly',
             priority: 0.8,
         },
         {
-            url: `${baseUrl}/ouyi/ios`,
+            url: `${ouyiUrl}/ios`,
             lastModified: new Date(),
             changeFrequency: 'weekly',
             priority: 0.8,
         },
         {
-            url: `${baseUrl}/ouyi/pc`,
+            url: `${ouyiUrl}/pc`,
             lastModified: new Date(),
             changeFrequency: 'weekly',
             priority: 0.8,

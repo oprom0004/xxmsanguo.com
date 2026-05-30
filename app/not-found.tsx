@@ -31,7 +31,7 @@ export default function NotFound() {
                         返回首页
                     </Link>
                     <Link
-                        href="/ouyi"
+                        href="https://ouyi.xxmsanguo.com/"
                         className="block w-full py-3 px-4 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-xl font-bold transition-colors"
                     >
                         前往下载中心

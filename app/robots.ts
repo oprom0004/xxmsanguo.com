@@ -9,6 +9,9 @@ export default function robots(): MetadataRoute.Robots {
             allow: '/',
             disallow: '/private/',
         },
-        sitemap: 'https://xxmsanguo.com/sitemap.xml', // Replace with your actual domain
+        sitemap: [
+            'https://xxmsanguo.com/sitemap.xml',
+            'https://ouyi.xxmsanguo.com/ouyi-sitemap.xml',
+        ],
     }
 }

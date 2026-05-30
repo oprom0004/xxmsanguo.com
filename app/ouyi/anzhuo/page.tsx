@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     images: ['/okx-banner.png'],
   },
   alternates: {
-    canonical: '/ouyi/anzhuo',
+    canonical: 'https://ouyi.xxmsanguo.com/anzhuo',
   },
 }
 
@@ -38,7 +38,7 @@ export default function OuyiAndroidPage() {
   }
 
   const breadcrumbs = [
-    { label: '欧易下载中心', href: '/ouyi' },
+    { label: '欧易下载中心', href: 'https://ouyi.xxmsanguo.com/' },
     { label: '安卓版下载' },
   ]
 

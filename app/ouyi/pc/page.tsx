@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     images: ['/okx-banner.png'],
   },
   alternates: {
-    canonical: '/ouyi/pc',
+    canonical: 'https://ouyi.xxmsanguo.com/pc',
   },
 }
 
@@ -36,7 +36,7 @@ export default function OuyiPCPage() {
   }
 
   const breadcrumbs = [
-    { label: '欧易下载中心', href: '/ouyi' },
+    { label: '欧易下载中心', href: 'https://ouyi.xxmsanguo.com/' },
     { label: '电脑版下载' }
   ]
 

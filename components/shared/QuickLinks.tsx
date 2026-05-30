@@ -6,10 +6,10 @@ interface QuickLinksProps {
 }
 
 const links = [
-  { id: 'android', label: '安卓版下载', desc: '官方 APK · 防封锁', icon: Smartphone, href: '/ouyi/anzhuo' },
-  { id: 'ios', label: '苹果版下载', desc: '海外 ID · 教程', icon: Globe, href: '/ouyi/ios' },
-  { id: 'pc', label: '电脑版下载', desc: 'Win/Mac · 专业版', icon: Monitor, href: '/ouyi/pc' },
-  { id: 'ouyi', label: '下载中心首页', desc: '返回索引页', icon: Home, href: '/ouyi' },
+  { id: 'android', label: '安卓版下载', desc: '官方 APK · 防封锁', icon: Smartphone, href: 'https://ouyi.xxmsanguo.com/anzhuo' },
+  { id: 'ios', label: '苹果版下载', desc: '海外 ID · 教程', icon: Globe, href: 'https://ouyi.xxmsanguo.com/ios' },
+  { id: 'pc', label: '电脑版下载', desc: 'Win/Mac · 专业版', icon: Monitor, href: 'https://ouyi.xxmsanguo.com/pc' },
+  { id: 'ouyi', label: '下载中心首页', desc: '返回索引页', icon: Home, href: 'https://ouyi.xxmsanguo.com/' },
 ]
 
 export default function QuickLinks({ current }: QuickLinksProps) {

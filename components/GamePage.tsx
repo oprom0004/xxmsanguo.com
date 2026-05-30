@@ -22,10 +22,10 @@ const screenshots = [
 const tags = ["角色扮演", "战棋", "策略", "高自由度", "单机", "三国", "武侠", "像素风"]
 
 const recommendedLinks = [
-  { title: "欧易下载", href: "/ouyi", icon: "/ouyi-logo.png" },
-  { title: "欧易安卓版下载", href: "/ouyi/anzhuo", icon: "https://upload.wikimedia.org/wikipedia/commons/d/d7/Android_robot.svg" },
-  { title: "欧易苹果版下载", href: "/ouyi/ios", icon: "https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" },
-  { title: "欧易电脑版下载", href: "/ouyi/pc", icon: "/okex-logo-pc.png" }
+  { title: "欧易下载", href: "https://ouyi.xxmsanguo.com/", icon: "/ouyi-logo.png" },
+  { title: "欧易安卓版下载", href: "https://ouyi.xxmsanguo.com/anzhuo", icon: "https://upload.wikimedia.org/wikipedia/commons/d/d7/Android_robot.svg" },
+  { title: "欧易苹果版下载", href: "https://ouyi.xxmsanguo.com/ios", icon: "https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" },
+  { title: "欧易电脑版下载", href: "https://ouyi.xxmsanguo.com/pc", icon: "/okex-logo-pc.png" }
 ]
 
 export default function GamePage() {

@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     images: ['/okx-banner.png'],
   },
   alternates: {
-    canonical: '/ouyi/ios',
+    canonical: 'https://ouyi.xxmsanguo.com/ios',
   },
 }
 
@@ -36,7 +36,7 @@ export default function OuyiIOSPage() {
   }
 
   const breadcrumbs = [
-    { label: '欧易下载中心', href: '/ouyi' },
+    { label: '欧易下载中心', href: 'https://ouyi.xxmsanguo.com/' },
     { label: '苹果版指南' }
   ]
 
