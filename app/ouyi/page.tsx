@@ -153,7 +153,7 @@ export default function OuyiPage() {
                 <div>
                   <strong className="text-slate-900">欧易安卓版下载 (Android)：</strong>
                   针对华为、小米等国产手机提供官方 APK 安装包。内置防拦截技术，解决“安装失败”或“风险应用”误报问题。
-                  <Link href="https://ouyi.xxmsanguo.com/anzhuo" className="text-blue-600 hover:underline ml-1">查看详细安装教程 &gt;</Link>
+                  <a href="https://ouyi.xxmsanguo.com/anzhuo" className="text-blue-600 hover:underline ml-1">查看详细安装教程 &gt;</a>
                 </div>
               </li>
               <li className="flex gap-3">
@@ -161,7 +161,7 @@ export default function OuyiPage() {
                 <div>
                   <strong className="text-slate-900">欧易苹果版下载 (iOS)：</strong>
                   提供海外 Apple ID 注册教程与 TestFlight 备用下载方案。解决 App Store 搜不到 OKX 的问题。
-                  <Link href="https://ouyi.xxmsanguo.com/ios" className="text-blue-600 hover:underline ml-1">获取 iOS 官方ID &gt;</Link>
+                  <a href="https://ouyi.xxmsanguo.com/ios" className="text-blue-600 hover:underline ml-1">获取 iOS 官方ID &gt;</a>
                 </div>
               </li>
               <li className="flex gap-3">
@@ -169,7 +169,7 @@ export default function OuyiPage() {
                 <div>
                   <strong className="text-slate-900">欧易电脑版下载 (PC)：</strong>
                   支持 Windows 与 macOS 双系统。拥有更专业的 K 线图表与多屏监控功能，适合高频交易者。
-                  <Link href="https://ouyi.xxmsanguo.com/pc" className="text-blue-600 hover:underline ml-1">下载桌面客户端 &gt;</Link>
+                  <a href="https://ouyi.xxmsanguo.com/pc" className="text-blue-600 hover:underline ml-1">下载桌面客户端 &gt;</a>
                 </div>
               </li>
             </ul>
@@ -254,15 +254,15 @@ export default function OuyiPage() {
             <ul className="space-y-3 text-sm">
               <li className="flex items-center gap-2 text-slate-600 hover:text-blue-600">
                 <ChevronDown size={14} className="-rotate-90" />
-                <Link href="https://ouyi.xxmsanguo.com/anzhuo">欧易安卓版下载 (最新)</Link>
+                <a href="https://ouyi.xxmsanguo.com/anzhuo">欧易安卓版下载 (最新)</a>
               </li>
               <li className="flex items-center gap-2 text-slate-600 hover:text-blue-600">
                 <ChevronDown size={14} className="-rotate-90" />
-                <Link href="https://ouyi.xxmsanguo.com/ios">欧易苹果版下载 (指南)</Link>
+                <a href="https://ouyi.xxmsanguo.com/ios">欧易苹果版下载 (指南)</a>
               </li>
               <li className="flex items-center gap-2 text-slate-600 hover:text-blue-600">
                 <ChevronDown size={14} className="-rotate-90" />
-                <Link href="https://ouyi.xxmsanguo.com/pc">欧易电脑版下载 (Pro)</Link>
+                <a href="https://ouyi.xxmsanguo.com/pc">欧易电脑版下载 (Pro)</a>
               </li>
             </ul>
 

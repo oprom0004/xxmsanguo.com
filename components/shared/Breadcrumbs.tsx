@@ -18,12 +18,21 @@ export default function Breadcrumbs({ items }: BreadcrumbsProps) {
           <li key={index} className="inline-flex items-center">
             {index > 0 && <ChevronRight className="mx-1 text-slate-600" size={14} />}
             {item.href && index < items.length - 1 ? (
-              <Link 
-                href={item.href}
-                className="hover:text-white transition-colors cursor-pointer text-slate-400"
-              >
-                {item.label}
-              </Link>
+              item.href.startsWith('http') ? (
+                <a 
+                  href={item.href}
+                  className="hover:text-white transition-colors cursor-pointer text-slate-400"
+                >
+                  {item.label}
+                </a>
+              ) : (
+                <Link 
+                  href={item.href}
+                  className="hover:text-white transition-colors cursor-pointer text-slate-400"
+                >
+                  {item.label}
+                </Link>
+              )
             ) : (
               <span className={`${index === items.length - 1 ? 'text-white font-medium cursor-default pointer-events-none' : 'text-slate-400'}`}>
                 {item.label}

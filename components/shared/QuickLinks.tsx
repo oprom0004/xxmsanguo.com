@@ -25,7 +25,7 @@ export default function QuickLinks({ current }: QuickLinksProps) {
         {visibleLinks.map((link) => {
           const Icon = link.icon
           return (
-            <Link
+            <a
               key={link.id}
               href={link.href}
               className="group flex flex-col p-4 rounded-lg bg-slate-50 border border-slate-200 hover:border-blue-300 hover:bg-blue-50/30 hover:shadow-sm cursor-pointer transition-all"
@@ -37,7 +37,7 @@ export default function QuickLinks({ current }: QuickLinksProps) {
                 <span className="font-bold text-slate-700 group-hover:text-blue-700">{link.label}</span>
               </div>
               <span className="text-xs text-slate-500 pl-[42px]">{link.desc}</span>
-            </Link>
+            </a>
           )
         })}
       </div>

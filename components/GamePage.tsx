@@ -40,7 +40,7 @@ function HeroRecommendedLinks() {
       <h3 className="font-bold text-gray-900 mb-4">更多推荐</h3>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
         {recommendedLinks.map((item, i) => (
-          <Link
+          <a
             key={i}
             href={item.href}
             className="group flex flex-col items-center text-center gap-2 cursor-pointer hover:bg-gray-50 p-3 rounded-lg transition-colors border border-gray-100 min-h-[116px] md:min-h-[124px]"
@@ -52,7 +52,7 @@ function HeroRecommendedLinks() {
               <div className="font-bold text-gray-800 text-sm leading-tight group-hover:text-brand line-clamp-2">{item.title}</div>
               <div className="text-xs text-gray-400 mt-1 leading-tight">官方正版 · 安全下载</div>
             </div>
-          </Link>
+          </a>
         ))}
       </div>
     </div>
@@ -72,7 +72,7 @@ function FloatingQuickLinks() {
         <ArrowUp size={20} />
       </button>
       {recommendedLinks.map((item) => (
-        <Link
+        <a
           key={item.href}
           href={item.href}
           className="w-11 h-11 rounded-full bg-white border border-gray-200 shadow-lg flex items-center justify-center p-2 hover:border-brand/40 hover:bg-brand/5 transition-colors"
@@ -80,7 +80,7 @@ function FloatingQuickLinks() {
           title={item.title}
         >
           <Image src={item.icon} alt="" width={24} height={24} className="object-contain" />
-        </Link>
+        </a>
       ))}
     </div>
   )
