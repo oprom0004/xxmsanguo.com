@@ -67,7 +67,7 @@ export default function OuyiPage() {
               </div>
               <div className="text-xs text-slate-400">APK | v6.48.1 | 64-bit</div>
             </a>
-            <a href="https://okx26.app" target="_blank" rel="noopener noreferrer" className="bg-[#1f2937] hover:bg-[#374151] text-white p-4 rounded-sm text-left transition-all border border-slate-700 block">
+            <a href="https://oyiweb.com" target="_blank" rel="noopener noreferrer" className="bg-[#1f2937] hover:bg-[#374151] text-white p-4 rounded-sm text-left transition-all border border-slate-700 block">
               <div className="flex items-center gap-2 mb-1">
                 <Globe size={16} />
                 <span className="font-bold">欧易苹果版下载</span>

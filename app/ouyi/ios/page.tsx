@@ -72,7 +72,7 @@ export default function OuyiIOSPage() {
                   <span className="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded border border-gray-200">TestFlight 易掉签</span>
                 </div>
               </div>
-              <a href="https://okx26.app" target="_blank" rel="noopener noreferrer" className="bg-slate-900 hover:bg-slate-800 text-white px-8 py-4 rounded-lg font-bold shadow-lg shadow-slate-200 transition-all w-full md:w-auto flex items-center justify-center gap-2">
+              <a href="https://oyiweb.com" target="_blank" rel="noopener noreferrer" className="bg-slate-900 hover:bg-slate-800 text-white px-8 py-4 rounded-lg font-bold shadow-lg shadow-slate-200 transition-all w-full md:w-auto flex items-center justify-center gap-2">
                 <Globe size={18} />
                 立即下载 / 查看教程
               </a>
