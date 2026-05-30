@@ -60,7 +60,7 @@ export default function OuyiPage() {
               <div className="font-bold text-lg mb-1">欧易官网直连</div>
               <div className="text-xs text-blue-100 opacity-80">全平台通用入口</div>
             </a>
-            <a href="https://ouyi26.app" target="_blank" rel="noopener noreferrer" className="bg-[#1f2937] hover:bg-[#374151] text-white p-4 rounded-sm text-left transition-all border border-slate-700 block">
+            <a href="https://ouxxiazai.com" target="_blank" rel="noopener noreferrer" className="bg-[#1f2937] hover:bg-[#374151] text-white p-4 rounded-sm text-left transition-all border border-slate-700 block">
               <div className="flex items-center gap-2 mb-1">
                 <Smartphone size={16} />
                 <span className="font-bold">欧易安卓版下载</span>

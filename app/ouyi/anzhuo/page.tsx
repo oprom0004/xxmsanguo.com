@@ -76,7 +76,7 @@ export default function OuyiAndroidPage() {
                   <span className="text-xs bg-purple-100 text-purple-700 px-2 py-1 rounded border border-purple-200">内置 Web3</span>
                 </div>
               </div>
-              <a href="https://ouyi26.app" target="_blank" rel="noopener noreferrer" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-bold shadow-lg shadow-blue-200 transition-all w-full md:w-auto flex items-center justify-center gap-2">
+              <a href="https://ouxxiazai.com" target="_blank" rel="noopener noreferrer" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-bold shadow-lg shadow-blue-200 transition-all w-full md:w-auto flex items-center justify-center gap-2">
                 <Download size={20} />
                 立即下载 APK
               </a>
