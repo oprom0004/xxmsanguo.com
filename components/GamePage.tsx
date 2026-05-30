@@ -29,16 +29,16 @@ const recommendedLinks = [
   { title: "欧易电脑版下载", href: "https://ouyi.xxmsanguo.com/pc", icon: "/okex-logo-pc.png" }
 ]
 
-function MobileRecommendedLinks() {
+function HeroRecommendedLinks() {
   return (
-    <div className="bg-white p-6 shadow-soft mb-4 md:hidden">
+    <div className="bg-white md:rounded-2xl p-6 shadow-soft mb-4">
       <h3 className="font-bold text-gray-900 mb-4">更多推荐</h3>
-      <div className="grid grid-cols-2 gap-3">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
         {recommendedLinks.map((item, i) => (
           <Link
             key={i}
             href={item.href}
-            className="group flex flex-col items-center text-center gap-2 cursor-pointer hover:bg-gray-50 p-3 rounded-lg transition-colors border border-gray-100 min-h-[116px]"
+            className="group flex flex-col items-center text-center gap-2 cursor-pointer hover:bg-gray-50 p-3 rounded-lg transition-colors border border-gray-100 min-h-[116px] md:min-h-[124px]"
           >
             <div className="w-11 h-11 flex-shrink-0 bg-white rounded-full overflow-hidden border border-gray-200 p-1 flex items-center justify-center">
               <Image src={item.icon} alt={item.title} width={24} height={24} className="object-contain" />
@@ -180,8 +180,8 @@ export default function GamePage() {
               </div>
             </div>
 
-            {/* Mobile Only: Recommended Links / More Games */}
-            <MobileRecommendedLinks />
+            {/* Recommended Links / More Games */}
+            <HeroRecommendedLinks />
 
             {/* Screenshots Gallery */}
             <div className="bg-white md:rounded-2xl p-6 shadow-soft mb-4 overflow-hidden">
@@ -374,32 +374,6 @@ export default function GamePage() {
               </div>
             </div>
 
-
-
-            {/* Related Games */}
-            <div className="bg-white rounded-2xl p-6 shadow-soft">
-              <h3 className="font-bold text-gray-900 mb-4">你可能也喜欢</h3>
-              <div className="space-y-4">
-                {recommendedLinks.map((item, i) => (
-                  <Link
-                    key={i}
-                    href={item.href}
-                    className="flex gap-3 items-center group cursor-pointer hover:bg-gray-50 p-2 rounded-lg transition-colors -mx-2"
-                  >
-                    <div className="w-10 h-10 flex-shrink-0 bg-white rounded-full overflow-hidden border border-gray-200 p-1 flex items-center justify-center">
-                      <Image src={item.icon} alt={item.title} width={24} height={24} className="object-contain" />
-                    </div>
-                    <div className="flex-1 min-w-0">
-                      <div className="font-bold text-gray-800 text-sm truncate group-hover:text-brand">{item.title}</div>
-                      <div className="text-xs text-gray-400">官方正版 · 安全下载</div>
-                    </div>
-                    <div className="text-gray-300">
-                      <ChevronDown className="-rotate-90" size={16} />
-                    </div>
-                  </Link>
-                ))}
-              </div>
-            </div>
           </aside>
 
         </div>
