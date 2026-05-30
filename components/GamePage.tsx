@@ -28,6 +28,34 @@ const recommendedLinks = [
   { title: "欧易电脑版下载", href: "https://ouyi.xxmsanguo.com/pc", icon: "/okex-logo-pc.png" }
 ]
 
+function MobileRecommendedLinks() {
+  return (
+    <div className="bg-white p-6 shadow-soft mb-4 md:hidden">
+      <h3 className="font-bold text-gray-900 mb-4">更多推荐</h3>
+      <div className="space-y-4">
+        {recommendedLinks.map((item, i) => (
+          <Link
+            key={i}
+            href={item.href}
+            className="flex gap-3 items-center group cursor-pointer hover:bg-gray-50 p-2 rounded-lg transition-colors -mx-2 border border-gray-100"
+          >
+            <div className="w-10 h-10 flex-shrink-0 bg-white rounded-full overflow-hidden border border-gray-200 p-1 flex items-center justify-center">
+              <Image src={item.icon} alt={item.title} width={24} height={24} className="object-contain" />
+            </div>
+            <div className="flex-1 min-w-0">
+              <div className="font-bold text-gray-800 text-sm truncate group-hover:text-brand">{item.title}</div>
+              <div className="text-xs text-gray-400">官方正版 · 安全下载</div>
+            </div>
+            <div className="text-gray-300">
+              <ChevronDown className="-rotate-90" size={16} />
+            </div>
+          </Link>
+        ))}
+      </div>
+    </div>
+  )
+}
+
 export default function GamePage() {
   return (
     <div className="min-h-screen bg-[#f5f6f7] font-sans pb-20 md:pb-0">
@@ -126,6 +154,9 @@ export default function GamePage() {
                 </div>
               </div>
             </div>
+
+            {/* Mobile Only: Recommended Links / More Games */}
+            <MobileRecommendedLinks />
 
             {/* Screenshots Gallery */}
             <div className="bg-white md:rounded-2xl p-6 shadow-soft mb-4 overflow-hidden">
@@ -281,31 +312,6 @@ export default function GamePage() {
               <button className="w-full py-3 text-brand text-sm font-medium bg-brand/5 rounded-lg hover:bg-brand/10 transition-colors">
                 查看更多评价
               </button>
-            </div>
-
-            {/* Mobile Only: Recommended Links / More Games */}
-            <div className="bg-white p-6 shadow-soft mb-4 md:hidden">
-              <h3 className="font-bold text-gray-900 mb-4">更多推荐</h3>
-              <div className="space-y-4">
-                {recommendedLinks.map((item, i) => (
-                  <Link
-                    key={i}
-                    href={item.href}
-                    className="flex gap-3 items-center group cursor-pointer hover:bg-gray-50 p-2 rounded-lg transition-colors -mx-2 border border-gray-100"
-                  >
-                    <div className="w-10 h-10 flex-shrink-0 bg-white rounded-full overflow-hidden border border-gray-200 p-1 flex items-center justify-center">
-                      <Image src={item.icon} alt={item.title} width={24} height={24} className="object-contain" />
-                    </div>
-                    <div className="flex-1 min-w-0">
-                      <div className="font-bold text-gray-800 text-sm truncate group-hover:text-brand">{item.title}</div>
-                      <div className="text-xs text-gray-400">官方正版 · 安全下载</div>
-                    </div>
-                    <div className="text-gray-300">
-                      <ChevronDown className="-rotate-90" size={16} />
-                    </div>
-                  </Link>
-                ))}
-              </div>
             </div>
 
           </main>
