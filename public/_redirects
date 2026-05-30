@@ -1,12 +1,7 @@
-# Cloudflare Pages routing for the Ouyi subdomain migration.
-https://xxmsanguo.com/ouyi https://ouyi.xxmsanguo.com/ 301
-https://xxmsanguo.com/ouyi/ https://ouyi.xxmsanguo.com/ 301
-https://xxmsanguo.com/ouyi/anzhuo https://ouyi.xxmsanguo.com/anzhuo 301
-https://xxmsanguo.com/ouyi/ios https://ouyi.xxmsanguo.com/ios 301
-https://xxmsanguo.com/ouyi/pc https://ouyi.xxmsanguo.com/pc 301
-https://xxmsanguo.com/ouyi/* https://ouyi.xxmsanguo.com/:splat 301
-
-https://ouyi.xxmsanguo.com/ /ouyi.html 200
-https://ouyi.xxmsanguo.com/anzhuo /ouyi/anzhuo.html 200
-https://ouyi.xxmsanguo.com/ios /ouyi/ios.html 200
-https://ouyi.xxmsanguo.com/pc /ouyi/pc.html 200
+# Cloudflare Pages redirects for old Ouyi paths.
+/ouyi https://ouyi.xxmsanguo.com/ 301
+/ouyi/ https://ouyi.xxmsanguo.com/ 301
+/ouyi/anzhuo https://ouyi.xxmsanguo.com/anzhuo 301
+/ouyi/ios https://ouyi.xxmsanguo.com/ios 301
+/ouyi/pc https://ouyi.xxmsanguo.com/pc 301
+/ouyi/* https://ouyi.xxmsanguo.com/:splat 301
